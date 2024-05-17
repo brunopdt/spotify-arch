@@ -1,4 +1,4 @@
-# Arquitetura de Sistemas de Software Populares - Spotify <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" align="right" width="50">
+# Arquitetura de Sistemas de Software Populares - Spotify
 
 ### Engenharia de Software - PUC Minas
 ![Spotify Logo](https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg)
@@ -55,20 +55,21 @@ Todo o código do Spotify está disponível para todos os desenvolvedores de for
 
 
 ## Tecnologias Utilizadas
-As principais linguagens utilizadas pelo sistema Spotify são: Python, Java, JavaScript e C++. A linguagem Java é utilizada com o foco para o serviços de backend devido à sua robustez e escalabilidade. O python é utilizado principalmente na área de machine learning, data analysis e alguns componentes do backend. Dessa forma, utiliza-se desse grande recurso juntamente com a inteligência artificial para recomendar músicas, playlists e podcasts para seus usuários.  O C++ é usado para componentes de alto desempenho como codecs de áudio.
+As principais linguagens utilizadas pelo Spotify são: Python, Java, JavaScript e C++. A linguagem Java é utilizada com o foco para o serviços de backend devido à sua robustez e escalabilidade. O Python é utilizado principalmente na área de machine learning, data analysis e em alguns componentes do backend. Dessa forma, aliado à esses recursos, a inteligência artificial atua na recomendação de músicas, playlists e podcasts para os usuários. Por fim, o C++ é usado para componentes de alto desempenho como codecs de áudio.
 
-Além disso, também são utilizadas outras ferramentas como *kubernetes* (para a orquestração de conteineres, permitindo a implantação e gestão de aplicações em escala), *docker* (para conteinerização de aplicações, facilitando a portabilidade e consistência entre diferentes ambientes), *apache kafka* (para o processamento de fluxo de dados em tempo real, facilitando na comunicação entre diferentes serviços), *elasticSearch* para pesquisa e análise de dados em tempo real.
+Para a comunicação, integração e monitoramento da arquitetura distribuída em microsserviços utilizada pela aplicação, também são utilizadas outras ferramentas como *kubernetes* (para a orquestração de conteineres, permitindo a implantação e gestão de aplicações em escala), *docker* (para conteinerização de aplicações, facilitando a portabilidade e consistência entre diferentes ambientes), *apache kafka* (para o processamento de fluxo de dados em tempo real, facilitando na comunicação entre diferentes serviços), *elasticSearch* para pesquisa e análise de dados em tempo real.
 
-Por fim, algumas práticas de desenvolvimento principalmente utilizadas no Spotify são a arquitetura baseada em microsserviços, com a integração e entrega contínua (CI/CD) para agilizar o processo de desenvolvimento e implantação, e o Machine Learning para a personalização e recomendações de playlists. 
-
-É válido ressaltar também que o Spotify é compatível com uma ampla gama de sistemas operacionais e plataformas de modo que permite aos usuários acessarem serviços de qualquer dispositivo seja celulares, tablets, televisões, computadores e entre outros. Ele apresenta suporte para os sistemas operacionais iOS, Android, Windows, macOS e Linux. Isso torna
-
+É válido ressaltar também que o Spotify é compatível com uma grande diversidade de sistemas operacionais e plataformas, de modo que usuários utilizem os serviços disponibilizados pela plataforma de qualquer dispositivo que tenham acesso: desde celulares e tablets, até televisões inteligentes e assistentes de voz integradas com a plataforma. O sistema apresenta suporte para os sistemas operacionais iOS, Android, Windows, macOS e Linux, tornando o sistema acessível para uma ampla gama de usuários.
 
 ## Descrição da Arquitetura
 
-Todas as equipes compartilham um mesmo servidor centralizado de git, onde cada repositório git tem um proprietário de sistema dedicado que cuida do código e garante sua qualidade. O modelo de código transparente que o Spotify proporciona garante que todos tenham acesso ao código de todos, garantindo uma padronização de código e avanço o tempo todo.
+Todas as equipes compartilham uma mesma codebase, onde cada repositório git tem um proprietário de sistema dedicado que cuida do código e garante sua qualidade. Ademais, o modelo de código transparente que o Spotify proporciona garante que todos tenham acesso ao código de todos, garantindo uma padronização de código e avanço a todo momento.
 
 ![Spotify Logo](./assets/arquitetura.png)
+
+Como é demonstrado no diagrama acima, cada serviçp implementa sua própria lógica e, portanto, quando surge a necessidade de uma nova feature, apenas determinados componentes relacionados à funcionalidade idealizada devem ser modificados, testados e publicados, evitando o re-deploy na aplicação inteira. Dessa maneira, é possível extender a aplicação de maneira rápida e eficiente, garantindo uma melhor experiência para desenvolvedores e clientes finais.
+
+Também é válido ressaltar que para a comunicação interna dos microsserviços, existe um  protocolo interno do Spotify: o Hermes (hm). Ele foi desenvolvido do zero tendo o ZeroMQ como base (assim como HTTP - TCP).
 
 ## Curiosidades
 
@@ -82,5 +83,3 @@ Todas as equipes compartilham um mesmo servidor centralizado de git, onde cada r
 * [Spotify anuncia recurso que utiliza inteligência artificial para recomendar músicas; entenda](https://www.cnnbrasil.com.br/economia/spotify-anuncia-recurso-que-utiliza-inteligencia-artificial-para-recomendar-musicas-entenda/)
 * [Como o Spotify usa Ciência de Dados para engajar usuários](https://medium.com/somos-tera/como-o-spotify-usa-ci%C3%AAncia-de-dados-para-engajar-usu%C3%A1rios-bc47e3b948af) 
 * [Spotify e o poder das métricas](https://pt.k21.global/blog/spotify-e-o-poder-das-metricas?gad_source=1&gclid=Cj0KCQjwgJyyBhCGARIsAK8LVLOYm8cQUeFpoAwgkFN4N8EsCFLIyGEd3-2KqkI8sxpfrQBVitHXCI4aAnfIEALw_wcB )
-
-## Key Components
