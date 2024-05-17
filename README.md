@@ -55,6 +55,14 @@ Todo o código do Spotify está disponível para todos os desenvolvedores de for
 
 
 ## Tecnologias Utilizadas
+As principais linguagens utilizadas pelo sistema Spotify são: Python, Java, JavaScript e C++. A linguagem Java é utilizada com o foco para o serviços de backend devido à sua robustez e escalabilidade. O python é utilizado principalmente na área de machine learning, data analysis e alguns componentes do backend. Dessa forma, utiliza-se desse grande recurso juntamente com a inteligência artificial para recomendar músicas, playlists e podcasts para seus usuários.  O C++ é usado para componentes de alto desempenho como codecs de áudio.
+
+Além disso, também são utilizadas outras ferramentas como *kubernetes* (para a orquestração de conteineres, permitindo a implantação e gestão de aplicações em escala), *docker* (para conteinerização de aplicações, facilitando a portabilidade e consistência entre diferentes ambientes), *apache kafka* (para o processamento de fluxo de dados em tempo real, facilitando na comunicação entre diferentes serviços), *elasticSearch* para pesquisa e análise de dados em tempo real.
+
+Por fim, algumas práticas de desenvolvimento principalmente utilizadas no Spotify são a arquitetura baseada em microsserviços, com a integração e entrega contínua (CI/CD) para agilizar o processo de desenvolvimento e implantação, e o Machine Learning para a personalização e recomendações de playlists. 
+
+É válido ressaltar também que o Spotify é compatível com uma ampla gama de sistemas operacionais e plataformas de modo que permite aos usuários acessarem serviços de qualquer dispositivo seja celulares, tablets, televisões, computadores e entre outros. Ele apresenta suporte para os sistemas operacionais iOS, Android, Windows, macOS e Linux. Isso torna
+
 
 ## Descrição da Arquitetura
 
@@ -71,6 +79,8 @@ Todas as equipes compartilham um mesmo servidor centralizado de git, onde cada r
 * [Decoding Software Architecture Of Spotify: How Microservices Empowers Spotify](https://www.techaheadcorp.com/blog/decoding-software-architecture-of-spotify-how-microservices-empowers-spotify/)
 * [Backend infrastructure at Spotify](https://engineering.atspotify.com/2013/03/backend-infrastructure-at-spotify/)
 * [O que é o Spotify?](https://support.spotify.com/br-pt/article/what-is-spotify/)
-
+* [Spotify anuncia recurso que utiliza inteligência artificial para recomendar músicas; entenda](https://www.cnnbrasil.com.br/economia/spotify-anuncia-recurso-que-utiliza-inteligencia-artificial-para-recomendar-musicas-entenda/)
+* [Como o Spotify usa Ciência de Dados para engajar usuários](https://medium.com/somos-tera/como-o-spotify-usa-ci%C3%AAncia-de-dados-para-engajar-usu%C3%A1rios-bc47e3b948af) 
+* [Spotify e o poder das métricas](https://pt.k21.global/blog/spotify-e-o-poder-das-metricas?gad_source=1&gclid=Cj0KCQjwgJyyBhCGARIsAK8LVLOYm8cQUeFpoAwgkFN4N8EsCFLIyGEd3-2KqkI8sxpfrQBVitHXCI4aAnfIEALw_wcB )
 
 ## Key Components
