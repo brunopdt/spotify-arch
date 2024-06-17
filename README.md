@@ -69,6 +69,20 @@ Todas as equipes compartilham uma mesma codebase, onde cada repositório git tem
 
 Como é demonstrado no diagrama acima, cada serviçp implementa sua própria lógica e, portanto, quando surge a necessidade de uma nova feature, apenas determinados componentes relacionados à funcionalidade idealizada devem ser modificados, testados e publicados, evitando o re-deploy na aplicação inteira. Dessa maneira, é possível extender a aplicação de maneira rápida e eficiente, garantindo uma melhor experiência para desenvolvedores e clientes finais.
 
+## Modelagem Arquitetônica
+O modelo C4 é uma abordagem leve e direta para visualizar a arquitetura de software. Além de esboçar algumas abstrações, o C4 define uma notação padrão e melhores práticas para desenhar diagramas de sistemas de software. No geral, ele fornece boas diretrizes para garantir que os diagramas de software sejam compreensíveis e possam ficar sozinhos sem contexto adicional. O C4 consegue um bom equilíbrio entre "caixas e flechas" ad hoc e padrões excessivamente formais, encaixando-se como uma luva às necessidades da empresa.
+
+O C4 vem com uma coleção de abstrações de software. Então a duvida era a seguinte, como aplicá-lo ao lado das próprias abstrações do Modelo de Sistema do Spotify? O objetivo não era reinventar a roda, então mantiveram a notação C4 e as melhores práticas e substituíram sua camada de abstração pelo Modelo do Sistema da companhia. Consequentemente, tiveram que redefinir o conjunto de diagramas principais para documentar a arquitetura e o design do sistema:
+
+- Diagrama de paisagem do sistema: Descreve um conjunto de sistemas relacionados, como eles estão conectados e de quais sistemas externos eles dependem — por exemplo, todos os sistemas de propriedade de um esquadrão ou todos os sistemas em um domínio
+- Diagrama de contexto do sistema: descreve como um sistema se encaixa no contexto maior de dependências, dependentes e usuários
+- Diagrama de componentes do sistema: Descreve como um sistema é construído a partir de componentes individuais (conhecido como diagrama de contêiner em C4. 
+![Spotify-vs-C4-diagram-700x406-1](https://github.com/brunopdt/spotify-arch/assets/73006552/9df37ad9-6ad2-4032-a330-8f7a2271c9f9)
+4)
+
+Além dessa alteração, o Spotify utiliza o Backstage, um sistema de catalogo de software que possui uma serie de plug-ins extensível de arquitetura que oferece como grande benefício automatizar diagramas arquitetônicos fazendo com que eles sempre estejam atualizados com o design intencional expresso em metadados; Não haverá necessidade de atualizá-los à medida que o sistema evolui, e não haverá questionamento se a visualização está desatualizada.
+
+
 ## Curiosidades
 
 Uma curiosidade é que para a comunicação interna dos microsserviços, existe um  protocolo diferente utilizado no contexto do Spotify: o Hermes. Ele foi desenvolvido tendo o ZeroMQ como base (assim como HTTP - TCP), e os URIs dos tópicos para o modelo pub/sub são denotados por hm.
@@ -86,3 +100,4 @@ Uma curiosidade é que para a comunicação interna dos microsserviços, existe 
 * [Como o Spotify usa Ciência de Dados para engajar usuários](https://medium.com/somos-tera/como-o-spotify-usa-ci%C3%AAncia-de-dados-para-engajar-usu%C3%A1rios-bc47e3b948af) 
 * [Spotify e o poder das métricas](https://pt.k21.global/blog/spotify-e-o-poder-das-metricas?gad_source=1&gclid=Cj0KCQjwgJyyBhCGARIsAK8LVLOYm8cQUeFpoAwgkFN4N8EsCFLIyGEd3-2KqkI8sxpfrQBVitHXCI4aAnfIEALw_wcB )
 * [The Hidden Pub/Sub of Spotify](https://www.distributed-systems.net/my-data/papers/2013.debs.pdf)
+* [The Spotify System Model](https://engineering.atspotify.com/2022/07/software-visualization-challenge-accepted/)
