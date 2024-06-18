@@ -107,7 +107,8 @@ O C4 vem com uma coleção de abstrações de software. Então a duvida era a se
 
 - **Diagrama de paisagem do sistema:** Descreve um conjunto de sistemas relacionados, como eles estão conectados e de quais sistemas externos eles dependem — por exemplo, todos os sistemas de propriedade de um esquadrão ou todos os sistemas em um domínio
 - **Diagrama de contexto do sistema:** descreve como um sistema se encaixa no contexto maior de dependências, dependentes e usuários
-- **Diagrama de componentes do sistema:** Descreve como um sistema é construído a partir de componentes individuais (conhecido como diagrama de contêiner em C4. 
+- **Diagrama de componentes do sistema:** Descreve como um sistema é construído a partir de componentes individuais (conhecido como diagrama de contêiner em C4).
+ 
 ![Spotify-vs-C4-diagram-700x406-1](https://github.com/brunopdt/spotify-arch/assets/73006552/9df37ad9-6ad2-4032-a330-8f7a2271c9f9)
 
 Além disso, o Spotify utiliza o Backstage, um sistema de catalogo de software que possui uma serie de plug-ins extensível de arquitetura que oferece como grande benefício automatizar diagramas arquitetônicos fazendo com que eles sempre estejam atualizados com o design intencional expresso em metadados; Não haverá necessidade de atualizá-los à medida que o sistema evolui, e não haverá questionamento se a visualização está desatualizada.
