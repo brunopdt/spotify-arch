@@ -59,6 +59,14 @@ Para dar suporte a todos esses usuários, serviços de áudio e funcionalidades 
 
 - **Segurança:** Para proteger os dados dos usuários, o Spotify implementa várias medidas de segurança, incluindo criptografia, autenticação e controles de privacidade.
 
+- **Suporte Web:** Suporte a diversos navegadores (Chrome, Firefox, Edge, Opera e Safa)
+
+- **Suporte Aplicativo:** O aplicativo do spotify tem como requisitos mínimos:
+- iOs 14 ou acima
+- Android OS 5.0 ou acima
+- Mac OS X 11.0 ou acima
+- Windows 10 or above 
+
 ### **Requisitos de Segurança**
 - **Criptografia**: Todas as comunicações entre clientes e servidores são criptografadas usando TLS (Transport Layer Security) para proteger os dados contra interceptação durante a transmissão.
 - **Armazenamento Seguro de Senhas:** Senhas são armazenadas usando algoritmos de hashing seguros (e.g., bcrypt) que adicionam um nível de complexidade que torna impraticável a recuperação de senhas a partir dos hashes armazenados.
