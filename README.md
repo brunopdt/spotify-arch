@@ -61,11 +61,7 @@ Para dar suporte a todos esses usuários, serviços de áudio e funcionalidades 
 
 - **Suporte Web:** Suporte a diversos navegadores (Chrome, Firefox, Edge, Opera e Safa)
 
-- **Suporte Aplicativo:** O aplicativo do spotify tem como requisitos mínimos:
-- iOs 14 ou acima
-- Android OS 5.0 ou acima
-- Mac OS X 11.0 ou acima
-- Windows 10 or above 
+- **Suporte Aplicativo:** O aplicativo do spotify tem como requisitos mínimos: iOs 14 ou acima, Android OS 5.0 ou acima, Mac OS X 11.0 ou acima e Windows 10 ou superior. 
 
 ### **Requisitos de Segurança**
 - **Criptografia**: Todas as comunicações entre clientes e servidores são criptografadas usando TLS (Transport Layer Security) para proteger os dados contra interceptação durante a transmissão.
