@@ -60,6 +60,13 @@ Para dar suporte a todos esses usuários, serviços de áudio e funcionalidades 
 - **Segurança:** Para proteger os dados dos usuários, o Spotify implementa várias medidas de segurança, incluindo criptografia, autenticação e controles de privacidade.
 
 ### **Requisitos de Segurança**
+- **Criptografia**: Todas as comunicações entre clientes e servidores são criptografadas usando TLS (Transport Layer Security) para proteger os dados contra interceptação durante a transmissão.
+- **Armazenamento Seguro de Senhas:** Senhas são armazenadas usando algoritmos de hashing seguros (e.g., bcrypt) que adicionam um nível de complexidade que torna impraticável a recuperação de senhas a partir dos hashes armazenados.
+- **Autenticação OAuth:** Tokens OAuth são utilizados para autenticar usuários e autorizar o acesso a recursos de API, oferecendo uma camada adicional de segurança em operações e integrações de aplicativos.
+- **Firewall e Segregação de Rede:** Uso de firewalls e segmentação de rede para proteger os sistemas contra acessos não autorizados e ataques de negação de serviço (DDoS).
+- **Controle de Privacidade:**
+- O Spotify adere ao GDPR, que exige a transparência no uso dos dados dos usuários. Informações sobre coleta, uso e armazenamento de dados pessoais são claramente comunicadas aos usuários.
+- O Spotify obtém consentimento explícito dos usuários para o processamento de dados pessoais, especialmente para finalidades como marketing ou compartilhamento de dados com terceiros.
 
 ## Arquitetura Organizacional
 
@@ -131,8 +138,25 @@ Além disso, o Spotify utiliza o Backstage, um sistema de catalogo de software q
 2. O Spotify usa aprendizado de máquina e inteligência artificial para melhorar continuamente suas recomendações, aprendendo com os hábitos de escuta de seus usuários ao longo do tempo.
 
 ## Conclusão
+O  Spotify exemplifica como a convergência de uma infraestrutura robusta, com a arquitetura orientada a microsserviços e a adoção de tecnologias modernas podem criar uma experiência de usuário excepcional e sustentável em escala global. Ao analisar a arquitetura do Spotify, destaca-se vários aspectos que contribuíram para seu sucesso e inovação contínua.
+Os principais pontos são: 
 
+- **Escalabilidade e desempenho:**
+	A infrastrutura do Spotify é projetada para suportar milhares de usuários simultaneamente. Desse modo, a utilização de bancos de dados NoSQL e SQL permite lidar eficientemente com grandes volumes de dados, enquanto a combinação de AWS e tecnologias de conteinerização como Docker e Kubernetes garante a escalabilidade e a flexibilidade necessárias para atender à demanda variável. Além disso, o uso de Apache Kafka contribui para o processamento de fluxo de dados em tempo real otimizando a comunicação entre serviços.
+
+- **Inteligência artificial e Análise de dados:**
+	A inteligência artificial juntamente com a análise de dados possibilita a recomendação de músicas e playlists baseadas no gosto e estilo musical de cada usuário. Desse modo, a recomendação juntamente com a personalização não só melhora a experiência do usuário, mas também aumenta o engajamento e a retenção na plataforma.
+
+- **Arquitetura Organizacional e Desenvolvimento Ágil:**
+A abordagem organizacional do Spotify, centrada em equipes autônomas ou "squads", facilita a inovação rápida e contínua. Cada equipe é responsável por uma parte específica da aplicação, o que elimina dependências excessivas e acelera o desenvolvimento de novas funcionalidades. 
+
+- **Segurança e conformidade:**
+A proteção dos dados dos usuários é uma prioridade para o Spotify. Medidas de segurança abrangentes, incluindo criptografia, autenticação robusta e controles de privacidade, são implementadas para proteger dados pessoais e financeiros. Adesão a melhores práticas de egurança e a conformidade com regulamentos locais asseguram que o Spotify mantenha a confiança dos usuários e opere em conformidade com normas internacionais.
+
+- **Inovação Contínua:**
+O uso do modelo C4 para visualização da arquitetura e a integração com ferramentas como o Backstage demonstram o compromisso do Spotify com a inovação contínua. O Backstage permite que a documentação arquitetônica e os diagramas estejam sempre atualizados, refletindo no estado atual do sistema. Desso modo, facilita a gestão e a evolução da arquitetura, o que permite uma adaptação ágil às mudanças e aos novos desafios tecnológicos
 ## Referências Bibliográficas
+
 
 * [Decoding Software Architecture Of Spotify: How Microservices Empowers Spotify](https://www.techaheadcorp.com/blog/decoding-software-architecture-of-spotify-how-microservices-empowers-spotify/)
 * [Backend infrastructure at Spotify](https://engineering.atspotify.com/2013/03/backend-infrastructure-at-spotify/)
