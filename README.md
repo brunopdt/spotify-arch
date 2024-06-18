@@ -137,6 +137,8 @@ Além disso, o Spotify utiliza o Backstage, um sistema de catalogo de software q
 
 2. O Spotify usa aprendizado de máquina e inteligência artificial para melhorar continuamente suas recomendações, aprendendo com os hábitos de escuta de seus usuários ao longo do tempo.
 
+3. Possui várias APIs para integrar com várias plataformas e dispositivos.
+
 ## Conclusão
 O  Spotify exemplifica como a convergência de uma infraestrutura robusta, com a arquitetura orientada a microsserviços e a adoção de tecnologias modernas podem criar uma experiência de usuário excepcional e sustentável em escala global. Ao analisar a arquitetura do Spotify, destaca-se vários aspectos que contribuíram para seu sucesso e inovação contínua.
 Os principais pontos são: 
