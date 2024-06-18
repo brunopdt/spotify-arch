@@ -89,26 +89,27 @@ Todas as equipes compartilham uma mesma codebase, onde cada repositório git tem
 Como é demonstrado no diagrama acima, cada serviço implementa sua própria lógica e, portanto, quando surge a necessidade de uma nova feature, apenas determinados componentes relacionados à funcionalidade idealizada devem ser modificados, testados e publicados, evitando o re-deploy na aplicação inteira. Dessa maneira, é possível extender a aplicação de maneira rápida e eficiente, garantindo uma melhor experiência para desenvolvedores e clientes finais.
 
 ## Decisões de projeto
-Migração para AWS: Spotify migrou sua infraestrutura para a Amazon Web Services, ganhando escalabilidade e flexibilidade.
 
-Adoção de Microserviços: Para lidar com a complexidade crescentedo sistema, o Spotify adotou a arquitetura de microserviços. Isso permitiu que eles escalassem e desenvolvessem diferentes partes de forma paralela e independente.
+- Migração para AWS: Spotify migrou sua infraestrutura para a Amazon Web Services, ganhando escalabilidade e flexibilidade.
 
-Mudança de Linguagem: Originalmente em Python, o Spotify passou a usar Java e Scala para componentes críticos, melhorando desempenho.
+- Adoção de Microserviços: Para lidar com a complexidade crescente do sistema, o Spotify adotou a arquitetura de microserviços. Isso permitiu que eles escalassem e desenvolvessem diferentes partes de forma paralela e independente.
 
-Uso de Docker e Kubernetes: Utilizam Docker para contêineres e Kubernetes para orquestração, facilitando a implantação e gestão de serviços.
+- Uso de Docker e Kubernetes: Utilizam Docker para contêineres e Kubernetes para orquestração, facilitando a implantação e gestão de serviços.
 
-Inteligência Artificial e Machine Learning: Usam IA e machine learning para recomendações de músicas e criação de playlists personalizadas.
+- Inteligência Artificial e Machine Learning: Usam IA e machine learning para recomendações de músicas e criação de playlists personalizadas.
 
-Serviços de Pagamento: Desenvolveram uma infraestrutura robusta para transações financeiras globais, suportando vários métodos de pagamento e moedas.
+- Serviços de Pagamento: Desenvolveram uma infraestrutura robusta para transações financeiras globais, suportando vários métodos de pagamento e moedas.
 
 ## Histórico de mudanças
-Mudança para a Nuvem, o Spotify tinha sua própria infraestrutura de servidores. No entanto, eles decidiram migrar para a AWS para melhorar a escalabilidade e a disponibilidade.
 
-Mudança de Linguagem, originalmente em Python, o Spotify passou a usar Java e Scala.
+- Mudança para a Nuvem, o Spotify tinha sua própria infraestrutura de servidores. No entanto, eles decidiram migrar para a AWS para melhorar a escalabilidade e a disponibilidade.
 
-Introdução de Podcasts: Em resposta a popularidade crescente dos podcasts, o Spotify introduziu suporte para podcasts em sua plataforma.
+- Mudança de Linguagem, originalmente em Python, o Spotify passou a usar Java e Scala.
 
-Integração com Redes Sociais: Para aumentar a interatividade e o engajamento dos usuários, o Spotify integrou seu sistema com várias redes sociais, permitindo que os usuários compartilhem suas músicas e playlists favoritas.
+- Introdução de Podcasts: Em resposta a popularidade crescente dos podcasts, o Spotify introduziu suporte para podcasts em sua plataforma.
+
+- Integração com Redes Sociais: Para aumentar a interatividade e o engajamento dos usuários, o Spotify integrou seu sistema com várias redes sociais, permitindo que os usuários compartilhem suas músicas e playlists favoritas.
+
 ## Modelagem Arquitetônica
 
 O modelo C4 é uma abordagem leve e direta para visualizar a arquitetura de software. Além de esboçar algumas abstrações, o C4 define uma notação padrão e melhores práticas para desenhar diagramas de sistemas de software. No geral, ele fornece boas diretrizes para garantir que os diagramas de software sejam compreensíveis e possam ficar sozinhos sem contexto adicional. O C4 consegue um bom equilíbrio entre "caixas e flechas" ad hoc e padrões excessivamente formais, encaixando-se como uma luva às necessidades da empresa.
