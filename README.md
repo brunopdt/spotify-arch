@@ -157,7 +157,7 @@ Os principais pontos são:
 A abordagem organizacional do Spotify, centrada em equipes autônomas ou "squads", facilita a inovação rápida e contínua. Cada equipe é responsável por uma parte específica da aplicação, o que elimina dependências excessivas e acelera o desenvolvimento de novas funcionalidades. 
 
 - **Segurança e conformidade:**
-A proteção dos dados dos usuários é uma prioridade para o Spotify. Medidas de segurança abrangentes, incluindo criptografia, autenticação robusta e controles de privacidade, são implementadas para proteger dados pessoais e financeiros. Adesão a melhores práticas de egurança e a conformidade com regulamentos locais asseguram que o Spotify mantenha a confiança dos usuários e opere em conformidade com normas internacionais.
+A proteção dos dados dos usuários é uma prioridade para o Spotify. Medidas de segurança abrangentes, incluindo criptografia, autenticação robusta e controles de privacidade, são implementadas para proteger dados pessoais e financeiros. Adesão a melhores práticas de segurança e a conformidade com regulamentos locais asseguram que o Spotify mantenha a confiança dos usuários e opere em conformidade com normas internacionais.
 
 - **Inovação Contínua:**
 O uso do modelo C4 para visualização da arquitetura e a integração com ferramentas como o Backstage demonstram o compromisso do Spotify com a inovação contínua. O Backstage permite que a documentação arquitetônica e os diagramas estejam sempre atualizados, refletindo no estado atual do sistema. Desso modo, facilita a gestão e a evolução da arquitetura, o que permite uma adaptação ágil às mudanças e aos novos desafios tecnológicos
