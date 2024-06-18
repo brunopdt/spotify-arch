@@ -124,9 +124,11 @@ Além disso, o Spotify utiliza o Backstage, um sistema de catalogo de software q
 
 ## Curiosidades
 
-Uma curiosidade é que para a comunicação interna dos microsserviços, existe um  protocolo diferente utilizado no contexto do Spotify: o Hermes. Ele foi desenvolvido tendo o ZeroMQ como base (assim como HTTP - TCP), e os URIs dos tópicos para o modelo pub/sub são denotados por hm.
+1. Uma curiosidade é que para a comunicação interna dos microsserviços, existe um  protocolo diferente utilizado no contexto do Spotify: o Hermes. Ele foi desenvolvido tendo o ZeroMQ como base (assim como HTTP - TCP), e os URIs dos tópicos para o modelo pub/sub são denotados por hm.
 
 ![Hermes](https://github.com/brunopdt/spotify-arch/assets/101884125/f4a9a456-f75f-4b37-bffb-cd6c3be21416)
+
+2. O Spotify usa aprendizado de máquina e inteligência artificial para melhorar continuamente suas recomendações, aprendendo com os hábitos de escuta de seus usuários ao longo do tempo.
 
 ## Conclusão
 
