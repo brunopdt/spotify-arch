@@ -59,7 +59,7 @@ Para dar suporte a todos esses usuários, serviços de áudio e funcionalidades 
 
 - **Segurança:** Para proteger os dados dos usuários, o Spotify implementa várias medidas de segurança, incluindo criptografia, autenticação e controles de privacidade.
 
-- **Suporte Web:** Suporte a diversos navegadores (Chrome, Firefox, Edge, Opera e Safa)
+- **Suporte Web:** Suporte a diversos navegadores (Chrome, Firefox, Edge, Opera e Safari)
 
 - **Suporte Aplicativo:** O aplicativo do spotify tem como requisitos mínimos: iOs 14 ou acima, Android OS 5.0 ou acima, Mac OS X 11.0 ou acima e Windows 10 ou superior. 
 
