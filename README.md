@@ -104,8 +104,6 @@ Como é demonstrado no diagrama acima, cada serviço implementa sua própria ló
 
 - Mudança para a Nuvem, o Spotify tinha sua própria infraestrutura de servidores. No entanto, eles decidiram migrar para a AWS para melhorar a escalabilidade e a disponibilidade.
 
-- Mudança de Linguagem, originalmente em Python, o Spotify passou a usar Java e Scala.
-
 - Introdução de Podcasts: Em resposta a popularidade crescente dos podcasts, o Spotify introduziu suporte para podcasts em sua plataforma.
 
 - Integração com Redes Sociais: Para aumentar a interatividade e o engajamento dos usuários, o Spotify integrou seu sistema com várias redes sociais, permitindo que os usuários compartilhem suas músicas e playlists favoritas.
