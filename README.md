@@ -16,10 +16,11 @@
 
 # Sumário
 - [Introdução](#introdução)
-- [Funcionalidades e Segurança](#funcionalidades-e-segurança)
+- [Requisitos e Funcionalidades](#requisitos-e-funcionalidades)
 - [Arquitetura Organizacional](#arquitetura-organizacional)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
 - [Descrição da Arquitetura](#descrição-da-arquitetura)
+- [Modelagem Arquitetônica](#modelagem-arquitetônica)
 - [Curiosidades](#curiosidades)
 - [Conclusão](#conclusão)
 - [Referências Bibliográficas](#referências-bibliográficas)
@@ -119,3 +120,4 @@ Uma curiosidade é que para a comunicação interna dos microsserviços, existe 
 * [Spotify e o poder das métricas](https://pt.k21.global/blog/spotify-e-o-poder-das-metricas?gad_source=1&gclid=Cj0KCQjwgJyyBhCGARIsAK8LVLOYm8cQUeFpoAwgkFN4N8EsCFLIyGEd3-2KqkI8sxpfrQBVitHXCI4aAnfIEALw_wcB )
 * [The Hidden Pub/Sub of Spotify](https://www.distributed-systems.net/my-data/papers/2013.debs.pdf)
 * [The Spotify System Model](https://engineering.atspotify.com/2022/07/software-visualization-challenge-accepted/)
+* [AWS ajuda Spotify a expandir globalmente](https://e03.com.br/aws-ajuda-spotify-a-expandir-globalmente-2/)
